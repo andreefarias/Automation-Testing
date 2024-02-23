@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-23T03:34:53.340Z",
+    "end": "2024-02-23T03:35:15.915Z",
+    "duration": 22575,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5c053828-91d9-4edc-ab3d-682154444ae7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\shop.cy.js",
+      "file": "cypress\\e2e\\shop.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "32781266-c375-48e3-83cd-bba8f80a4863",
+          "title": "Shop",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Comprar um item ",
+              "fullTitle": "Shop Comprar um item ",
+              "timedOut": null,
+              "duration": 17826,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Dado um usuário acessando a loja do site \ncy.visit('https://practice.automationtesting.in/shop/');\n// e Dado a escolha do produto\ncy.selectOneProduct('170');\n// e Dado o carrinho de produtos com um item\ncy.goToCart();\n// Quando finalizar os detalhes de pagamento\ncy.proceedToCheckout();\ncy.fillBillingDetails('André', 'Farias', 'Automation', 'andre@farias.com', '00123456789', 'Street', '1000', 'New York', '12345');\n// Então afirme que a compra foi feita com sucesso\ncy.orderReceived();",
+              "err": {},
+              "uuid": "76451abf-b3f7-4f9f-8eb2-13bb8877489d",
+              "parentUUID": "32781266-c375-48e3-83cd-bba8f80a4863",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "76451abf-b3f7-4f9f-8eb2-13bb8877489d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17826,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

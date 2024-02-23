@@ -1,0 +1,21 @@
+{
+  "name": "automation-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open --config-file=cypress.config.js",
+    "cy:open:mobile": "cypress open --config viewportWidth=414 viewportHeight=896",
+    "test": "cypress run --config-file=cypress.config.js",
+    "test:mobile": "cypress run --config viewportWidth=414 viewportHeight=896"
+  },
+  "keywords": [],
+  "author": "André Farias",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.5",
+    "cypress-axe": "^1.5.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3"
+  }
+}
